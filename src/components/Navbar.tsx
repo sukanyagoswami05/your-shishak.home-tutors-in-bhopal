@@ -27,11 +27,13 @@ const Navbar = () => {
       <div className="container flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <img 
-            src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
-            alt="Your Shikshak Logo" 
-            className="h-10 w-auto"
-          />
+          <div className="rounded-full overflow-hidden h-12 w-12 border-2 border-white shadow-md flex items-center justify-center bg-white">
+            <img 
+              src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
+              alt="Your Shikshak Logo" 
+              className="h-10 w-10 object-contain"
+            />
+          </div>
           <span className={`font-display text-xl font-bold ${isScrolled ? 'text-shikshak-blue' : 'text-white'}`}>YOUR SHIKSHAK</span>
         </a>
 

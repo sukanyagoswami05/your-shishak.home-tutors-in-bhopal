@@ -8,12 +8,12 @@ const HeroSection = () => {
       id="home" 
       className="relative min-h-screen flex items-center pt-16 pb-20"
       style={{
-        backgroundImage: 'linear-gradient(rgba(10, 29, 86, 0.9), rgba(10, 29, 86, 0.8)), url("https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1932&auto=format&fit=crop")',
+        backgroundImage: 'linear-gradient(to right, #0638B5, #295DDE)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-shikshak-blue/90 to-shikshak-blue/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20"></div>
       
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">

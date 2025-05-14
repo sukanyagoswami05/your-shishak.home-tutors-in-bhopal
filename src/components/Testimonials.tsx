@@ -24,6 +24,27 @@ const Testimonials = () => {
       image: "https://randomuser.me/api/portraits/women/65.jpg",
       text: "We tried group tuition before, but the one-on-one approach at Your Shikshak has been so much more effective. My son's grades have improved, and he actually enjoys studying now!",
       stars: 4
+    },
+    {
+      name: "Vikram Singh",
+      role: "NEET Aspirant",
+      image: "https://randomuser.me/api/portraits/men/71.jpg",
+      text: "The biology and chemistry tutoring at Your Shikshak was instrumental in my NEET preparation. My tutor's deep subject knowledge and focus on NCERT concepts was exactly what I needed.",
+      stars: 5
+    },
+    {
+      name: "Ananya Gupta",
+      role: "Parent of Class 8 Student",
+      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      text: "My son was struggling with mathematics, but after just three months with his Your Shikshak tutor, he's gained so much confidence. The weekly progress reports help us stay informed about his improvement.",
+      stars: 5
+    },
+    {
+      name: "Rajesh Kumar",
+      role: "B.Com Student",
+      image: "https://randomuser.me/api/portraits/men/11.jpg",
+      text: "Finding good commerce tutors is difficult, but Your Shikshak connected me with an excellent accountancy tutor who simplified complex topics. My grades have improved dramatically this semester.",
+      stars: 4
     }
   ];
 
@@ -39,11 +60,13 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-card">
               <div className="flex items-center gap-3 mb-2">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name} 
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+                <div className="w-12 h-12 rounded-full overflow-hidden">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div>
                   <h4 className="font-semibold text-shikshak-blue">{testimonial.name}</h4>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
