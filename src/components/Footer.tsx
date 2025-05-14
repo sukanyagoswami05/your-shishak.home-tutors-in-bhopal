@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, Instagram, MapPin } from 'lucide-react';
 
@@ -9,11 +8,13 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-8">
           <div className="lg:w-1/3">
             <div className="flex items-center gap-2 mb-4">
-              <img 
-                src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
-                alt="Your Shikshak Logo" 
-                className="h-10 w-auto brightness-0 invert"
-              />
+              <div className="rounded-full overflow-hidden h-12 w-12 bg-white flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
+                  alt="Your Shikshak Logo" 
+                  className="h-10 w-10 object-contain"
+                />
+              </div>
               <span className="font-display text-xl font-bold text-white">YOUR SHIKSHAK</span>
             </div>
             <p className="text-white/80 mb-4">
