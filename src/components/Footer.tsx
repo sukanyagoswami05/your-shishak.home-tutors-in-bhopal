@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-8 mb-8">
           <div className="lg:w-1/3">
             <div className="flex items-center gap-2 mb-4">
-              <div className="rounded-full overflow-hidden h-12 w-12 bg-white flex items-center justify-center">
+              <div className="rounded-full overflow-hidden h-12 w-12 border-3 border-white flex items-center justify-center bg-white">
                 <img 
                   src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
                   alt="Your Shikshak Logo" 
-                  className="h-10 w-10 object-contain"
+                  className="h-10 w-10 object-cover transform scale-110"
                 />
               </div>
               <span className="font-display text-xl font-bold text-white">YOUR SHIKSHAK</span>
