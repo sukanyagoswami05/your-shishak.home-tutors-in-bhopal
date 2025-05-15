@@ -129,7 +129,7 @@
   }
   
   .activity-icon {
-    @apply h-16 w-16 mb-3 text-shikshak-blue group-hover:scale-110 transform duration-300;
+    @apply h-16 w-16 mb-3 text-shikshak-blue;
   }
   
   /* New animation classes */
@@ -232,4 +232,24 @@ html {
   width: 80%;
   margin: 2rem auto;
   border-radius: 2px;
+}
+
+/* Timeline dots */
+.timeline-dot {
+  @apply h-4 w-4 bg-shikshak-blue rounded-full;
+  position: relative;
+}
+
+.timeline-dot:before {
+  content: '';
+  @apply absolute bg-shikshak-yellow;
+  height: 100%;
+  width: 2px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-dot:last-child:before {
+  display: none;
 }
