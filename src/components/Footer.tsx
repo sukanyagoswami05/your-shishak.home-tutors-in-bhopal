@@ -1,31 +1,35 @@
+
 import React from 'react';
 import { Phone, Mail, Instagram, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-shikshak-blue text-white pt-12 pb-6">
+    <footer className="bg-shikshak-blue text-white pt-16 pb-6">
       <div className="container">
-        <div className="flex flex-col lg:flex-row justify-between gap-8 mb-8">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 mb-12">
           <div className="lg:w-1/3">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="rounded-full overflow-hidden h-12 w-12 border-3 border-white flex items-center justify-center bg-white">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="rounded-full overflow-hidden h-14 w-14 border-3 border-white flex items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
                 <img 
                   src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
                   alt="Your Shikshak Logo" 
-                  className="h-10 w-10 object-cover transform scale-110"
+                  className="h-12 w-12 object-cover transform scale-110"
                 />
               </div>
-              <span className="font-display text-xl font-bold text-white">YOUR SHIKSHAK</span>
+              <div className="font-display text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                YOUR SHIKSHAK
+              </div>
             </div>
-            <p className="text-white/80 mb-4">
-              Your Learning Partner in Bhopal, providing personalized home tutoring services for students of all ages and academic levels.
+            <p className="text-white/80 mb-6 leading-relaxed">
+              Your Learning Partner in Bhopal, providing personalized home tutoring services for students of all ages and academic levels. We connect qualified tutors with dedicated students for a superior learning experience.
             </p>
             <div className="flex items-center gap-4">
               <a 
                 href="https://www.instagram.com/yourshikshak.inn" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
+                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hover:scale-110 transform"
+                aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -33,7 +37,8 @@ const Footer = () => {
                 href="https://wa.me/message/G6DL5N2LVSKIM1" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
+                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hover:scale-110 transform"
+                aria-label="WhatsApp"
               >
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -46,7 +51,8 @@ const Footer = () => {
               </a>
               <a 
                 href="mailto:yourshikshaktutoringservice@gmail.com" 
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
+                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hover:scale-110 transform"
+                aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -54,61 +60,100 @@ const Footer = () => {
           </div>
           
           <div className="lg:w-1/5">
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-semibold mb-4 border-b border-white/20 pb-2">Quick Links</h4>
+            <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-white/80 hover:text-white transition-colors hover:underline">Home</a>
+                <a href="#home" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline">Services</a>
+                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#testimonials" className="text-white/80 hover:text-white transition-colors hover:underline">Testimonials</a>
+                <a href="#testimonials" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Testimonials
+                </a>
               </li>
               <li>
-                <a href="#about" className="text-white/80 hover:text-white transition-colors hover:underline">About Us</a>
+                <a href="#about" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="#contact" className="text-white/80 hover:text-white transition-colors hover:underline">Contact</a>
+                <a href="#contact" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#become-tutor" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-green rounded-full"></span>
+                  Join as a Tutor
+                </a>
               </li>
             </ul>
           </div>
           
           <div className="lg:w-1/5">
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-semibold mb-4 border-b border-white/20 pb-2">Services</h4>
+            <ul className="space-y-3">
               <li>
-                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline">Class 1-10 Tutoring</a>
+                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Class 1-10 Tutoring
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline">Class 11-12 Tutoring</a>
+                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Class 11-12 Tutoring
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline">JEE/NEET/CUET Coaching</a>
+                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  JEE/NEET/CUET Coaching
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline">Graduation Subjects</a>
+                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-yellow rounded-full"></span>
+                  Graduation Subjects
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white/80 hover:text-white transition-colors hover:underline flex items-center gap-2">
+                  <span className="w-1 h-1 bg-shikshak-green rounded-full"></span>
+                  Extracurricular Activities
+                </a>
               </li>
             </ul>
           </div>
           
           <div className="lg:w-1/4">
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            <h4 className="text-lg font-semibold mb-4 border-b border-white/20 pb-2">Contact Info</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0" />
+              <li className="flex items-start gap-3 group">
+                <Phone className="h-5 w-5 flex-shrink-0 group-hover:text-shikshak-yellow transition-colors" />
                 <a href="tel:+919244947668" className="text-white/80 hover:text-white transition-colors hover:underline">
                   +91 9244947668
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 flex-shrink-0" />
+              <li className="flex items-start gap-3 group">
+                <Mail className="h-5 w-5 flex-shrink-0 group-hover:text-shikshak-yellow transition-colors" />
                 <a href="mailto:yourshikshaktutoringservice@gmail.com" className="text-white/80 hover:text-white transition-colors hover:underline break-all">
                   yourshikshaktutoringservice@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <Instagram className="h-5 w-5 flex-shrink-0" />
+              <li className="flex items-start gap-3 group">
+                <Instagram className="h-5 w-5 flex-shrink-0 group-hover:text-shikshak-yellow transition-colors" />
                 <a 
                   href="https://www.instagram.com/yourshikshak.inn" 
                   target="_blank" 
@@ -118,8 +163,8 @@ const Footer = () => {
                   @yourshikshak.inn
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 flex-shrink-0" />
+              <li className="flex items-start gap-3 group">
+                <MapPin className="h-5 w-5 flex-shrink-0 group-hover:text-shikshak-yellow transition-colors" />
                 <span className="text-white/80">Bhopal, Madhya Pradesh</span>
               </li>
             </ul>

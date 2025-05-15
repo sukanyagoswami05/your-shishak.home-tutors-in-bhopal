@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 217 80% 19%; /* Deep Blue #0A1D56 */
+    --primary: 217 80% 19%; /* Deep Blue #001F54 */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -75,7 +75,7 @@
   }
 
   body {
-    @apply bg-white text-foreground font-sans;
+    @apply bg-shikshak-light text-foreground font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -93,11 +93,11 @@
   }
 
   .btn-primary {
-    @apply bg-shikshak-green text-white font-medium px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 shadow-md;
+    @apply bg-shikshak-green text-white font-medium px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:scale-105 transform duration-200;
   }
 
   .btn-secondary {
-    @apply bg-shikshak-yellow text-shikshak-blue font-medium px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 shadow-md;
+    @apply bg-shikshak-yellow text-shikshak-blue font-medium px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:scale-105 transform duration-200;
   }
 
   .heading-xl {
@@ -105,7 +105,7 @@
   }
 
   .heading-lg {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-2xl md:text-3xl font-bold relative after:content-[''] after:block after:w-16 after:h-1 after:bg-shikshak-yellow after:mt-2 after:mb-4;
   }
 
   .heading-md {
@@ -113,11 +113,23 @@
   }
 
   .service-card {
-    @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 flex flex-col items-center text-center h-full;
+    @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all border border-gray-100 flex flex-col items-center text-center h-full transform hover:-translate-y-1 duration-300;
   }
 
   .testimonial-card {
-    @apply bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col gap-4;
+    @apply bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col gap-4 hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300;
+  }
+  
+  .feature-icon {
+    @apply h-12 w-12 p-2 rounded-full bg-gradient-to-br from-shikshak-blue to-blue-700 text-white flex items-center justify-center shadow-md;
+  }
+  
+  .activity-card {
+    @apply bg-white p-4 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center transition-all hover:shadow-lg hover:border-shikshak-blue/40 group;
+  }
+  
+  .activity-icon {
+    @apply h-16 w-16 mb-3 text-shikshak-blue group-hover:scale-110 transform duration-300;
   }
 }
 
@@ -139,4 +151,31 @@
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+}
+
+/* Enhance the navbar sticky effect */
+.sticky-navbar {
+  @apply bg-white shadow-md;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Divider enhancement */
+.fancy-divider {
+  height: 4px;
+  background: linear-gradient(to right, transparent, #001F54, transparent);
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 2px;
 }

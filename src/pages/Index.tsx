@@ -22,6 +22,31 @@ const Index = () => {
     if (metaDescription) {
       metaDescription.setAttribute("content", "Your Shikshak provides personalized home tutoring services in Bhopal for Classes 1-12, JEE, NEET, and graduation subjects. Book a free demo class today!");
     }
+
+    // Setup intersection observer for animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all animated elements
+    const animatedElements = document.querySelectorAll('.animated-element');
+    animatedElements.forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => {
+      // Cleanup
+      animatedElements.forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
   }, []);
 
   return (
