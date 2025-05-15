@@ -131,6 +131,23 @@
   .activity-icon {
     @apply h-16 w-16 mb-3 text-shikshak-blue group-hover:scale-110 transform duration-300;
   }
+  
+  /* New animation classes */
+  .animated-image-container {
+    @apply relative overflow-hidden rounded-lg shadow-xl;
+  }
+  
+  .animated-image {
+    @apply w-full h-auto transition-all duration-700 hover:scale-105;
+  }
+  
+  .floating-animation {
+    animation: floating 6s ease-in-out infinite;
+  }
+  
+  .animated-badge {
+    animation: pulse 2s ease-in-out infinite;
+  }
 }
 
 /* Custom styles for the sticky WhatsApp button on mobile */
@@ -145,6 +162,43 @@
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Dots background animation */
+.dots-background {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px);
+  background-size: 30px 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  animation: moveDots 60s linear infinite;
+}
+
+@keyframes moveDots {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500px 500px;
   }
 }
 
