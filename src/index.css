@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -125,7 +124,7 @@
   }
   
   .activity-card {
-    @apply bg-white p-4 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center transition-all hover:shadow-lg hover:border-shikshak-blue/40 group;
+    @apply bg-white p-4 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center transition-all hover:shadow-lg hover:border-shikshak-blue/40;
   }
   
   .activity-icon {

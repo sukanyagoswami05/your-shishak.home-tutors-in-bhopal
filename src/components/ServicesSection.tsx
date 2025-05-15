@@ -123,7 +123,7 @@ const ServicesSection = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {extracurricular.map((activity, index) => (
-            <div key={index} className="activity-card animated-element" style={{ animationDelay: `${index * 100}ms` }}>
+            <div key={index} className="activity-card group animated-element" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="activity-icon text-4xl mb-2">{activity.icon}</div>
               <h4 className="text-lg font-semibold text-shikshak-blue mb-1">{activity.title}</h4>
               <p className="text-gray-600 text-sm">{activity.description}</p>
