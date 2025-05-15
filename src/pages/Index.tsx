@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
-import EnhancedHeroSection from '../components/EnhancedHeroSection';
+import HeroSection from '../components/HeroSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ServicesSection from '../components/ServicesSection';
 import Testimonials from '../components/Testimonials';
@@ -53,7 +53,7 @@ const Index = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
-        <EnhancedHeroSection />
+        <HeroSection />
         <WhyChooseUs />
         <ServicesSection />
         <Testimonials />
