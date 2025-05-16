@@ -1,8 +1,8 @@
-
 import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight, BookOpen, CalendarCheck, Users } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const HeroSection = () => {
   // Animation variants
@@ -34,7 +34,7 @@ const HeroSection = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const heroBackground = document.querySelector('.hero-background');
-      if (heroBackground) {
+      if (heroBackground instanceof HTMLElement) {
         heroBackground.style.transform = `translateY(${scrollPosition * 0.15}px)`;
       }
     };
