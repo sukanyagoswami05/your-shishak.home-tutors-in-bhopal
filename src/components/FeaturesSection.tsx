@@ -2,14 +2,13 @@
 import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
 import { 
-  User, 
-  Users, 
+  BookUser, 
+  GraduationCap, 
   Star, 
-  Clock, 
+  CalendarCheck, 
   CreditCard, 
   Award,
-  BookUser,
-  GraduationCap,
+  Users,
   Layers
 } from 'lucide-react';
 import { Badge } from './ui/badge';
@@ -67,7 +66,7 @@ const FeaturesSection = () => {
   // Features for students/parents
   const studentFeatures = [
     {
-      icon: <User className="h-10 w-10 text-shikshak-yellow" />,
+      icon: <BookUser className="h-10 w-10 text-shikshak-yellow" />,
       title: "Experienced Tutors Only",
       description: "Our tutors undergo thorough background checks and have minimum 3+ years of teaching experience."
     },
@@ -83,20 +82,20 @@ const FeaturesSection = () => {
     }
   ];
 
-  // Additional features for students/parents
+  // Additional features for students/parents with improved icons
   const additionalStudentFeatures = [
     {
-      icon: <CreditCard className="h-10 w-10 text-white" />,
+      icon: <CreditCard className="h-12 w-12" />,
       title: "Affordable Pricing",
       description: "Quality education at reasonable rates with flexible payment options."
     },
     {
-      icon: <Clock className="h-10 w-10 text-white" />,
+      icon: <CalendarCheck className="h-12 w-12" />,
       title: "Weekly Progress Reports",
       description: "Regular updates on student performance with actionable improvement plans."
     },
     {
-      icon: <Award className="h-10 w-10 text-white" />,
+      icon: <Award className="h-12 w-12" />,
       title: "Female Tutors Available",
       description: "Option to choose preferred tutor gender for comfortable learning environment."
     }
@@ -151,16 +150,18 @@ const FeaturesSection = () => {
           ))}
         </motion.div>
 
-        {/* Additional features with different styling */}
+        {/* Additional features with improved styling and icons */}
         <div className="bg-gradient-to-r from-shikshak-blue to-blue-700 rounded-2xl p-8 md:p-12 mb-20 feature-animated-element">
           <h3 className="text-2xl font-bold text-white text-center mb-10">More Reasons to Choose Us</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {additionalStudentFeatures.map((feature, index) => (
               <div key={index} className="group hover:scale-105 transition-transform duration-300">
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 h-full hover:bg-white/20 transition-colors flex flex-col">
-                  <div className="bg-white/10 p-3 rounded-full inline-block mb-4">
-                    {feature.icon}
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 h-full hover:bg-white/20 transition-colors flex flex-col items-center text-center">
+                  <div className="bg-white rounded-full p-4 inline-block mb-4 shadow-lg">
+                    <div className="text-shikshak-blue">
+                      {feature.icon}
+                    </div>
                   </div>
                   <h4 className="text-xl font-semibold text-white mb-3">{feature.title}</h4>
                   <p className="text-white/80">{feature.description}</p>
@@ -170,21 +171,21 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* Visual learning journey */}
+        {/* Visual learning journey - fixed to remove the line issue */}
         <div className="feature-animated-element mb-20">
           <h3 className="heading-md text-center mb-12">Your Child's Learning Journey With Us</h3>
           
           <div className="relative">
-            {/* Horizontal line for desktop */}
-            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 transform -translate-y-1/2"></div>
+            {/* Horizontal line for desktop - making it gradient to blend better */}
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gray-200 to-transparent transform -translate-y-1/2"></div>
             
-            {/* Vertical line for mobile */}
-            <div className="md:hidden absolute top-0 bottom-0 left-4 w-1 bg-gray-200"></div>
+            {/* Vertical line for mobile - making it gradient to blend better */}
+            <div className="md:hidden absolute top-0 bottom-0 left-4 w-1 bg-gradient-to-b from-transparent via-gray-200 to-transparent"></div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-12 md:gap-x-6">
               {[
                 { icon: <BookUser className="h-6 w-6" />, title: "Book a Demo", text: "Experience our teaching approach with a free demo class" },
-                { icon: <User className="h-6 w-6" />, title: "Meet Your Tutor", text: "Get matched with a skilled tutor based on your requirements" },
+                { icon: <Users className="h-6 w-6" />, title: "Meet Your Tutor", text: "Get matched with a skilled tutor based on your requirements" },
                 { icon: <Layers className="h-6 w-6" />, title: "Personalized Learning", text: "Receive customized lessons and teaching methods" },
                 { icon: <GraduationCap className="h-6 w-6" />, title: "Track Progress", text: "Monitor improvements with regular assessments" }
               ].map((step, index) => (
