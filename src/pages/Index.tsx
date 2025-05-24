@@ -15,7 +15,7 @@ import MobileWhatsAppCTA from '../components/MobileWhatsAppCTA';
 const Index = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Your Shikshak - Top-Rated Home Tutors in Bhopal";
+    document.title = "Your Shikshak Home-Tutors-in-Bhopal";
     
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');

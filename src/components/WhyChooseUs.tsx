@@ -6,8 +6,8 @@ const WhyChooseUs = () => {
   const features = [
     {
       icon: <User className="h-10 w-10 text-shikshak-yellow" />,
-      title: "Experienced Tutors Only",
-      description: "Our tutors undergo thorough background checks and have minimum 3+ years of teaching experience."
+      title: "Experienced Tutors",
+      description: " Qualified educators with over 3 years of proven experience, ready to take charge of your child's academic progress and deliver the best results. Authorized and certified for quality teaching."
     },
     {
       icon: <Users className="h-10 w-10 text-shikshak-yellow" />,
@@ -16,8 +16,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Star className="h-10 w-10 text-shikshak-yellow" />,
-      title: "Comprehensive Curriculum",
-      description: "Covers School, Entrance Exams & College subjects with specially designed study materials."
+      title: "All-in-One Learning",
+      description: "Looking for complete support in your child’s academic and extracurricular journey? From competitive exams and school syllabus to fun skill-building activities - our tutors have it all covered."
     },
     {
       icon: <CreditCard className="h-10 w-10 text-shikshak-yellow" />,

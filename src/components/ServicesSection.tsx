@@ -82,7 +82,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="section bg-shikshak-light" ref={sectionRef}>
       <div className="container">
-        <h2 className="heading-lg text-center mb-4 animated-element">Our Services</h2>
+        <h2 className="heading-lg text-center mb-4 animated-element"> Explore Our Services</h2>
         <p className="text-center text-gray-600 max-w-xl mx-auto mb-12 animated-element">
           We provide customized tutoring services for all educational levels with experienced subject matter experts.
         </p>

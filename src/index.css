@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 217 80% 19%; /* Deep Blue #001F54 */
+    --primary: #ffffff; /* Deep Blue #001F54 */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;

@@ -107,14 +107,14 @@ const HeroSection = () => {
               className="text-white font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight"
               variants={itemVariants}
             >
-              Top-Rated Home Tutors for All Classes & Subjects
+               Bhopal’s No.1 Home Tutoring Academy – Trusted by Thousands
             </motion.h1>
             
             <motion.p 
               className="text-white/90 text-lg md:text-xl mb-8"
               variants={itemVariants}
             >
-              Personalized 1-on-1 tutoring with free demo classes and monthly progress tracking
+             Bringing quality education home – one student at a time
             </motion.p>
             
             <motion.div 
@@ -124,7 +124,7 @@ const HeroSection = () => {
               {[
                 { icon: <CheckCircle className="h-5 w-5 text-shikshak-yellow" />, label: "Verified Tutors" },
                 { icon: <CheckCircle className="h-5 w-5 text-shikshak-yellow" />, label: "Monthly Reports" },
-                { icon: <CheckCircle className="h-5 w-5 text-shikshak-yellow" />, label: "Easy Replacements" }
+                { icon: <CheckCircle className="h-5 w-5 text-shikshak-yellow" />, label: "Free Demo" }
               ].map((item, index) => (
                 <div 
                   key={index} 

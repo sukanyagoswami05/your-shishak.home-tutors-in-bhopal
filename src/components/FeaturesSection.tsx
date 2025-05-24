@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { 
   BookUser, 
   GraduationCap, 
@@ -115,9 +115,12 @@ const FeaturesSection = () => {
           <Badge variant="outline" className="mb-2 text-sm font-medium bg-shikshak-blue/5 text-shikshak-blue">
             Why Choose Us
           </Badge>
-          <h2 className="heading-lg">Why Students & Parents <span className="text-shikshak-blue">Love Your Shikshak?</span></h2>
+          <h2 className="heading-lg"> Why is Your Shikshak the top choice for every parent?<span className="text-shikshak-blue"></span></h2>
           <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-            We transform educational experiences through personalized tutoring backed by a rigorous system of verification, monitoring and reporting.
+             Because your child deserves more than just marks. We bring learning home. Every tutor is 
+             handpicked, background-verified, and trained to match your child’s unique pace and style. We don’t 
+             just teach- we track progress, share regular updates, and stay connected with you every step of the 
+             way. Smart parents choose Your Shikshak.
           </p>
         </div>
 

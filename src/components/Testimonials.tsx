@@ -5,31 +5,33 @@ import { Star, MessageCircle } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      role: "Parent of Class 10 Student",
+      name: "Anjali Gulbake ",
+      role: "Parent of Nivransh Gulbake Class 10 Student",
       image: "https://randomuser.me/api/portraits/women/12.jpg",
-      text: "Your Shikshak helped my daughter improve her math scores significantly. The tutor was patient and provided personalized attention that made all the difference.",
+      text: "The tutor from Your Shikshaks was very dedicated and punctual. He made sure Nivransh understood every concept clearly. We saw a big improvement in his confidence and marks."
+             
+,
       stars: 5
     },
     {
-      name: "Rahul Verma",
-      role: "JEE Aspirant",
+      name: " Moksh Jain",
+      role:" Class 7th Student",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
-      text: "The JEE coaching was excellent. My tutor helped me understand complex physics and mathematics concepts clearly, and I was able to crack JEE Mains with a good rank.",
+      text: "I like how my Shikshaks tutor explains everything so patiently. Learning at home feels easy and fun now. I scored full marks in my last math test!",
       stars: 5
     },
     {
-      name: "Meena Patel",
-      role: "Parent of Class 7 Student",
+      name: "Suresh Mahajan",
+      role: "Parent of Revati Mahajan – NEET Aspirant",
       image: "https://randomuser.me/api/portraits/women/65.jpg",
-      text: "We tried group tuition before, but the one-on-one approach at Your Shikshak has been so much more effective. My son's grades have improved, and he actually enjoys studying now!",
+      text: "Our tutor from Your Shikshaks planned Revati’s entire NEET prep schedule. The one-on-oneteaching at home made a big difference. We’re truly thankful.",
       stars: 4
     },
     {
-      name: "Vikram Singh",
-      role: "NEET Aspirant",
+      name: "Varad Singh",
+      role: "JEE Student",
       image: "https://randomuser.me/api/portraits/men/71.jpg",
-      text: "The biology and chemistry tutoring at Your Shikshak was instrumental in my NEET preparation. My tutor's deep subject knowledge and focus on NCERT concepts was exactly what I needed.",
+      text: "Thanks to the personal attention I got from Your Shikshaks tutor, my concepts became very clear. The focused JEE preparation at home helped me boost my score.",
       stars: 5
     },
     {
