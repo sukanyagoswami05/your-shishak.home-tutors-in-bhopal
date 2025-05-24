@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: "Anjali Gulbake ",
       role: "Parent of Nivransh Gulbake Class 10 Student",
-      image: "https://randomuser.me/api/portraits/women/12.jpg",
+      image: "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png",
       text: "The tutor from Your Shikshaks was very dedicated and punctual. He made sure Nivransh understood every concept clearly. We saw a big improvement in his confidence and marks."
              
 ,
@@ -16,35 +16,35 @@ const Testimonials = () => {
     {
       name: " Moksh Jain",
       role:" Class 7th Student",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4841.jpg?semt=ais_hybrid&w=740",
       text: "I like how my Shikshaks tutor explains everything so patiently. Learning at home feels easy and fun now. I scored full marks in my last math test!",
       stars: 5
     },
     {
       name: "Suresh Mahajan",
       role: "Parent of Revati Mahajan – NEET Aspirant",
-      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      image: "https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4861.jpg",
       text: "Our tutor from Your Shikshaks planned Revati’s entire NEET prep schedule. The one-on-oneteaching at home made a big difference. We’re truly thankful.",
       stars: 4
     },
     {
       name: "Varad Singh",
       role: "JEE Student",
-      image: "https://randomuser.me/api/portraits/men/71.jpg",
+      image: "https://img.freepik.com/premium-vector/man-avatar-profile-picture-isolated-background-avatar-profile-picture-man_1293239-4841.jpg?semt=ais_hybrid&w=740",
       text: "Thanks to the personal attention I got from Your Shikshaks tutor, my concepts became very clear. The focused JEE preparation at home helped me boost my score.",
       stars: 5
     },
     {
       name: "Ananya Gupta",
       role: "Parent of Class 8 Student",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png",
       text: "My son was struggling with mathematics, but after just three months with his Your Shikshak tutor, he's gained so much confidence. The weekly progress reports help us stay informed about his improvement.",
       stars: 5
     },
     {
       name: "Rajesh Kumar",
       role: "B.Com Student",
-      image: "https://randomuser.me/api/portraits/men/11.jpg",
+      image: "https://t3.ftcdn.net/jpg/07/51/96/72/360_F_751967271_lZbu30yvEUYMDzcN9QrbBiSyW3p4SZHU.jpg",
       text: "Finding good commerce tutors is difficult, but Your Shikshak connected me with an excellent accountancy tutor who simplified complex topics. My grades have improved dramatically this semester.",
       stars: 4
     }
