@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight, BookOpen, CalendarCheck, Users } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import WhatsAppImage from '../assets/WhatsApp Image 2025-05-26 at 12.00.14 AM.jpeg';
+
 
 const HeroSection = () => {
   // Animation variants
@@ -183,20 +185,17 @@ const HeroSection = () => {
               <div className="absolute -z-10 w-72 h-72 bg-shikshak-yellow/20 rounded-full blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
               
               {/* Main image */}
-              <motion.div 
-                className="animated-image-container rounded-xl border-4 border-white/20 shadow-2xl overflow-hidden"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img 
-                  src="/hero-tutor.png" 
-                  alt="Home tutor teaching student" 
-                  className="w-full h-auto"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600";
-                  }}
-                />
-              </motion.div>
+              <motion.div className="animated-image-container rounded-xl border-4 border-white/20 shadow-2xl overflow-hidden">
+  <img
+    src={WhatsAppImage}
+    alt="WhatsApp Preview"
+    className="w-full h-auto"
+    onError={(e) => {
+      e.currentTarget.src = "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=1470&q=80";
+    }}
+  />
+</motion.div>
+
               
               {/* Floating badges */}
               <motion.div 

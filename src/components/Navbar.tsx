@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { url } from 'inspector';
+import Logo from '../assets/1.jpg'; // adjust the path if needed
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,11 +59,11 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="rounded-full overflow-hidden h-14 w-14 border-2 border-white/30 shadow-lg flex items-center justify-center bg-white hover:scale-105 transition-transform duration-300">
-            <img 
-              src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
-              alt="Your Shikshak Logo" 
-              className="h-12 w-12 object-cover transform scale-110"
-            />
+            <img
+  src={Logo}
+  alt="Your Shishak Logo"
+  className="h-12 w-12 object-cover transform scale-110"
+/>
           </div>
           <div className={`font-display font-bold text-lg ${isScrolled ? 'text-shikshak-blue' : 'text-white'}`}>
             Your Shikshak

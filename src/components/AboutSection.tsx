@@ -1,6 +1,8 @@
 
 import React, { useEffect, useRef } from 'react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import KamaljeetImg from '../assets/kamaljeet.jpg';
+
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -86,11 +88,11 @@ const AboutSection = () => {
           <div className="w-full lg:w-1/2 animated-element" data-delay="300">
             <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-white group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
               <AspectRatio ratio={1/1} className="bg-gray-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Tutor helping student" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+               < img
+  src={KamaljeetImg}
+  alt="Kamaljeet"
+  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+/>
               </AspectRatio>
             </div>
             
