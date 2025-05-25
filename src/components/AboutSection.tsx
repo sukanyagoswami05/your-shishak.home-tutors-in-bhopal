@@ -100,7 +100,7 @@ const AboutSection = () => {
               <p className="italic text-gray-700">
                 "Education is not the filling of a pail, but the lighting of a fire."
               </p>
-              <p className="text-shikshak-blue font-medium mt-2">— W.B. Yeats</p>
+              <p className="text-shikshak-blue font-medium mt-2">— W. Yeats</p>
             </div>
           </div>
         </div>
