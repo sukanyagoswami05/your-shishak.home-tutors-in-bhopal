@@ -121,4 +121,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials
+export default Testimonials;
