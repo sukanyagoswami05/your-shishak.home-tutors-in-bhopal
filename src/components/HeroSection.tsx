@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight, BookOpen, CalendarCheck, Users } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import WhatsAppImage from '../assets/WhatsApp Image 2025-05-26 at 12.00.14 AM.jpeg';
+import WhatsAppImage from '../assets/new.jpeg';
 
 
 const HeroSection = () => {

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Phone, Mail, Instagram, MapPin } from 'lucide-react';
+import Logo from '../assets/1.jpg';
 
 const Footer = () => {
   return (
@@ -10,11 +11,11 @@ const Footer = () => {
           <div className="lg:w-1/3">
             <div className="flex items-center gap-3 mb-6">
               <div className="rounded-full overflow-hidden h-14 w-14 border-3 border-white flex items-center justify-center bg-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                <img 
-                  src="/lovable-uploads/d2454dc3-c95f-4244-be44-1b8d7a389c0a.png" 
-                  alt="Your Shikshak Logo" 
-                  className="h-12 w-12 object-cover transform scale-110"
-                />
+               <img
+  src={Logo}
+  alt="Your Shikshak Logo"
+  className="h-12 w-12 object-cover transform scale-110"
+/>
               </div>
               <div className="font-display text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 YOUR SHIKSHAK
