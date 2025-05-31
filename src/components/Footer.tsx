@@ -14,7 +14,7 @@ const Footer = () => {
                <img
   src={Logo}
   alt="Your Shikshak Logo"
-  className="h-12 w-12 object-cover transform scale-110"
+  className="h-14 w-15 object-cover transform scale-110"
 />
               </div>
               <div className="font-display text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
