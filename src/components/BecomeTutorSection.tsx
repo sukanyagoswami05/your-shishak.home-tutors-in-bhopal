@@ -1,3 +1,4 @@
+import tutorImage from '../assets/b32c2c78133ac33c0d790cc9ec683e7d.png';
 
 import React, { useEffect, useRef } from 'react';
 import { 
@@ -192,11 +193,15 @@ const BecomeTutorSection = () => {
         <div className="bg-gradient-to-r from-shikshak-blue to-blue-700 rounded-2xl p-1 shadow-xl max-w-4xl mx-auto">
           <div className="bg-white rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <img 
-                src="/hero-tutor.png" 
+              {
+              <img src={tutorImage} alt="Tutor " className="w-60 h-52 mr-2 rounded-full" />
+
+              
+              /* <img 
+                src="/assets/new.jpg"
                 alt="Become a tutor" 
                 className="rounded-lg shadow-md w-full object-cover h-64 md:h-auto"
-              />
+              /> */}
             </div>
             
             <div className="md:w-1/2 space-y-6 text-center md:text-left">
