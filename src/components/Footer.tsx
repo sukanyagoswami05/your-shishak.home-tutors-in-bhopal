@@ -166,7 +166,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3 group">
                 <MapPin className="h-5 w-5 flex-shrink-0 group-hover:text-shikshak-yellow transition-colors" />
-                <span className="text-white/80">Bhopal, Madhya Pradesh</span>
+                <span className="text-white/80">Bhopal, Madhya Pradesh  </span>
               </li>
             </ul>
           </div>
